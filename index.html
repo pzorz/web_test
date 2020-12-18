@@ -2,6 +2,7 @@
 
 <html>
 
+    <script src="bar_menu.js" type="text/javascript"></script>
     <head>
 
         <title>Peter Zorzonello</title>
@@ -10,49 +11,19 @@
     </head>
 
     <body>
-    
-    <div class="menu">
-      <div class="img_wrapper">
-        <input class="menu_img" type="image" src="imgs/lines.png" />
-      </div>
 
-      <button>
-        <a href="test.html">
-        Test
+      <button type="button" class="collapsible"> 
+        <script>menu()</script>
+        <img src="imgs/lines.png"/>
       </button>
 
       <div class="content">
         <ul>
-          <li><a href="test.html">About Me</a></li>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Work History</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Hobbies</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="education.html">Education</a></li>
           <li><a href="#">Resume</a></li>
         </ul>
       </div>
-
-    </div>
     
     </body>
-
-    <script type="text/javascript">
-            
-          
-            var coll = document.getElementsByClassName("menu");
-            var i;
-
-            for (i = 0; i < coll.length; i++) {
-              coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = document.getElementsByClassName("content");
-                if (content.style.maxHeight){
-                  content.style.maxHeight = null;
-                } else {
-                  content.style.maxHeight = content.scrollHeight + "px";
-                } 
-              });
-            }
-
-        </script>
 </html>
