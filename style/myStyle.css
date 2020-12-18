@@ -1,3 +1,101 @@
+body{
+    background: #272727;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.menu {
+    /*    anchors the div to the top right of the screen*/
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+/*    border: 3px solid #fff;*/
+}
+
+.menu_button_burger {
+    width: 50px;
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+    float: left;
+}
+.menu_button_burger::before,
+.menu_button_burger::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+
+.menu_button_burger::before{
+    transform: translateY(-16px);
+}
+
+.menu_button_burger::after{
+    transform: translateY(16px);
+}
+
+/*ANIMATION*/
+.menu_button.open .menu_button_burger{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu_button.open .menu_button_burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menu_button.open .menu_button_burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+/*ANIMATION*/
+
+.test {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 10000ms;
+    display: none;
+    transition: all 1s ease-in-out;
+}
+
+ul{
+    padding-left:0px;
+    padding-right:5px;
+    list-style: none;
+
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.test.open {
+    transform: translateY(50px);
+    opacity:1;
+    display: inline;
+    transition: all 1s ease-in-out;
+}
+
+
+
+
 .collapsible {
   background-color: #777;
   color: white;
