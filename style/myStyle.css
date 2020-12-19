@@ -138,12 +138,14 @@ body{
 }
 .about_me{
     color: #fff;
-    height: 100px;
     width: 100%;
+}
+p{
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .education{
     background:rgb(0, 255, 242);
-    height: 100px;
     width: 100%;
 }
 .career{
@@ -153,4 +155,9 @@ body{
 }
 .blue_header{
     color: rgb(0, 255, 242);
+    text-align: center;
+}
+.gray_header{
+    color:  #272727;
+    text-align: center;
 }
