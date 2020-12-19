@@ -3,6 +3,7 @@ body{
     display: flex;
     justify-content:center;
     align-items:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .menu {
     /*    anchors the div to the top right of the screen*/
@@ -136,7 +137,7 @@ body{
     width: 100%;
 }
 .about_me{
-    background: royalblue;
+    color: #fff;
     height: 100px;
     width: 100%;
 }
@@ -149,4 +150,7 @@ body{
     height: 100px;
     background: seagreen;
     width: 100%;
+}
+.blue_header{
+    color: rgb(0, 255, 242);
 }
