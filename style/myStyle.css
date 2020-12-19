@@ -18,8 +18,58 @@ body{
     width: 80px;
     height: 80px;
     cursor: pointer;
-    transition: all .5s ease-in-out;
-/*    border: 3px solid #fff;*/
+    transition: all .5s ease-in-out; 
+    /* border: 3px solid #fff; */
+}
+
+.menu_1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out; 
+    /* border: 3px solid rgb(0, 255, 13); */
+    color: rgb(0, 255, 242);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0;
+}
+.menu_2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out; 
+    /* border: 3px solid rgb(0, 68, 255); */
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0;
+}
+.menu_3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out; 
+    /* border: 3px solid rgb(255, 0, 0); */
+     color: rgb(0, 255, 242);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0;
+    
 }
 
 .menu_button_burger {
@@ -59,62 +109,44 @@ body{
 }
 .menu_button.open .menu_button_burger::before {
     transform: rotate(45deg) translate(35px, -35px);
+    background:rgb(0, 255, 242);
 }
 .menu_button.open .menu_button_burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
 }
 /*ANIMATION*/
 
-.test {
+.menu_1.open {
+    transform: translateX(-300px);
+    opacity: 1;
+}
+.menu_2.open {
+    transform: translateX(-200px);
+    opacity: 1;
+}
+.menu_3.open {
+    transform: translateX(-100px);
+    opacity: 1;
+}
+
+
+.content{
     position: absolute;
-    top: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 10000ms;
-    display: none;
-    transition: all 1s ease-in-out;
+    top: 80px;
+    width: 100%;
 }
-
-ul{
-    padding-left:0px;
-    padding-right:5px;
-    list-style: none;
-
+.about_me{
+    background: royalblue;
+    height: 100px;
+    width: 100%;
 }
-a {
-    color: #fff;
-    text-decoration: none;
+.education{
+    background:rgb(0, 255, 242);
+    height: 100px;
+    width: 100%;
 }
-
-.test.open {
-    transform: translateY(50px);
-    opacity:1;
-    display: inline;
-    transition: all 1s ease-in-out;
-}
-
-
-
-
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
+.career{
+    height: 100px;
+    background: seagreen;
+    width: 100%;
 }
