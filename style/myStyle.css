@@ -3,6 +3,7 @@ body{
     display: flex;
     justify-content:center;
     align-items:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .menu {
     /*    anchors the div to the top right of the screen*/
@@ -136,17 +137,27 @@ body{
     width: 100%;
 }
 .about_me{
-    background: royalblue;
-    height: 100px;
+    color: #fff;
     width: 100%;
+}
+p{
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .education{
     background:rgb(0, 255, 242);
-    height: 100px;
     width: 100%;
 }
 .career{
     height: 100px;
     background: seagreen;
     width: 100%;
+}
+.blue_header{
+    color: rgb(0, 255, 242);
+    text-align: center;
+}
+.gray_header{
+    color:  #272727;
+    text-align: center;
 }
