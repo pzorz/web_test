@@ -1,0 +1,28 @@
+.education{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.college_name{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.college_years{
+    margin-left: 50%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.details{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+h5{
+    margin-bottom: 5px;
+}
+.accomplishments{
+    margin-top: 5px;
+}
