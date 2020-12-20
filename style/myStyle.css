@@ -156,6 +156,10 @@ p{
     color: rgb(0, 255, 242);
     text-align: center;
 }
+.blue_title{
+    color: rgb(0, 255, 242);
+}
+
 .gray_header{
     color:  #272727;
     text-align: center;
@@ -173,4 +177,8 @@ p{
     margin-left: 50%;
     text-align: right;
     padding-right: 10px;
+}
+
+.white_text{
+    color: white;
 }
