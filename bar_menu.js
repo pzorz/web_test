@@ -1,9 +1,9 @@
 
 //for the animation of the burger to 'X'
 const menuBtn = document.querySelector('.menu_button');
-const menuAboutMe = document.querySelector('.menu_1');
-const menuEducation = document.querySelector('.menu_2');
-const menuCareer = document.querySelector('.menu_3');
+const menuAboutMe = document.querySelector('#about_menu');
+const menuEducation = document.querySelector('#education_menu');
+const menuCareer = document.querySelector('#career_menu');
 
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {

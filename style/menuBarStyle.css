@@ -1,0 +1,107 @@
+.menu {
+    /*    anchors the div to the top right of the screen*/
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out; 
+}
+
+.blue_menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out; 
+    color: rgb(0, 255, 242);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0;
+}
+.white_menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out; 
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0;
+}
+
+.menu_button_burger {
+    width: 50px;
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+    float: left;
+}
+.menu_button_burger::before,
+.menu_button_burger::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+
+.menu_button_burger::before{
+    transform: translateY(-16px);
+}
+
+.menu_button_burger::after{
+    transform: translateY(16px);
+}
+
+/*ANIMATION*/
+.menu_button.open .menu_button_burger{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu_button.open .menu_button_burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+    background:rgb(0, 255, 242);
+}
+.menu_button.open .menu_button_burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+#about_menu.open {
+    transform: translateX(-300px);
+    opacity: 1;
+}
+
+#education_menu.open {
+    transform: translateX(-200px);
+    opacity: 1;
+}
+
+#career_menu.open {
+    transform: translateX(-100px);
+    opacity: 1;
+}
+/*ANIMATION*/
