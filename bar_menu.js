@@ -4,6 +4,7 @@ const menuBtn = document.querySelector('.menu_button');
 const menuAboutMe = document.querySelector('#about_menu');
 const menuEducation = document.querySelector('#education_menu');
 const menuCareer = document.querySelector('#career_menu');
+const menuSkills = document.querySelector('#skills_menu');
 
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
@@ -12,12 +13,14 @@ menuBtn.addEventListener('click', () => {
         menuAboutMe.classList.add('open');
         menuEducation.classList.add('open');
         menuCareer.classList.add('open');
+        menuSkills.classList.add('open');
         menuOpen = true;
     } else {
         menuBtn.classList.remove('open');
         menuAboutMe.classList.remove('open');
         menuEducation.classList.remove('open');
         menuCareer.classList.remove('open');
+        menuSkills.classList.remove('open');
         menuOpen = false;
     }
 });
