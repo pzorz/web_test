@@ -29,6 +29,7 @@
     color: rgb(0, 255, 242);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     opacity: 0;
+    text-decoration: none;
 }
 .white_menu{
     position: absolute;
@@ -44,6 +45,7 @@
     color: #fff;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     opacity: 0;
+    text-decoration: none;
 }
 
 .menu_button_burger {
@@ -91,16 +93,21 @@
 }
 
 #about_menu.open {
-    transform: translateX(-300px);
+    transform: translateX(-400px);
     opacity: 1;
 }
 
 #education_menu.open {
-    transform: translateX(-200px);
+    transform: translateX(-300px);
     opacity: 1;
 }
 
 #career_menu.open {
+    transform: translateX(-200px);
+    opacity: 1;
+}
+
+#skills_menu.open{
     transform: translateX(-100px);
     opacity: 1;
 }
